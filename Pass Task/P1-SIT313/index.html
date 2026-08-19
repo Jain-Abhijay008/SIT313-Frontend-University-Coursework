@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Abhijay's Portfolio</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        nav {
+            padding: 20px;
+        }
+        
+        span {
+            padding: 10px;
+            color: rgb(87, 105, 238);
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        header img {
+            width: 100%;
+            display: block;
+            transition: 0.5s;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        
+        header:hover .overlay {
+            opacity: 1;
+        }
+        
+        header:hover img {
+            transform: scale(1.1);
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        
+        .column img {
+            margin: 8px 10px;
+            vertical-align: middle;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav><span>About</span><span>Work</span><span>Contact</span></nav>
+    <header><img src="images/ban.png" width="100%">
+        <div class="overlay">
+            <h1>Hello, I'm <a style="color:rgb(250, 244, 163);">Abhijay Jain</a>
+            </h1>
+        </div>
+    </header>
+    <section>
+        <center><img src="images/pic.png" height="300px" style="border-radius:300px; border:5px solid rgb(250, 244, 163)"><br><a style="color:rgb(5, 131, 242); font-size:40px;">I am an Artificial Intelligence & Machine Learning student pursuing a Bachelor of Engineering (Honours). With a strong interest in mathematics,
+        AI,
+        and financial markets,
+        I aspire to become a Quantitative Researcher and contribute to the future of quantitative finance.</a>
+            <hr width="20%"><br><a style="color:rgb(3, 87, 3); font-size:60px;">Here's what I have done so far</a>
+            <br></center>
+    </section>
+    <section style="padding:50px; background-color:#d9e1ef;">
+        <center>
+            <table cellpadding="10px">
+                <tr>
+                    <td><img src="images/cre.png" height="300px" width="500px" style="border-radius:50px; border:1px solid rgb(250, 244, 163)"></td>
+                    <td><a style="color:rgb(5, 131, 242); font-size:40px;">Credit Card Management System (Harvard CS50x Project)</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/h.png" height="300px" width="500px" style="border-radius:50px; border:1px solid rgb(250, 244, 163)"></td>
+                    <td><a style="color:rgb(5, 131, 242); font-size:40px;">System Architecture of Smart Home Network</a></td>
+                </tr>
+            </table>
+        </center>
+    </section><br><br>
+    <section>
+        <center><a style="color:rgb(3, 87, 3); font-size:60px;">My Gallery</a>
+            <div class="container">
+                <div class="column"><img src="images/1.png"><img src="images/2.png"><img src="images/3.png"><img src="images/4.png"><img src="images/6.png"><img src="images/7.png"><img src="images/8.png"></div>
+            </div>
+        </center>
+    </section>
+</body>
+
+</html>
